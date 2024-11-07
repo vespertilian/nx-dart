@@ -1,0 +1,25 @@
+{
+  "name": "dart-app-one",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "dart-app-one",
+  "projectType": "application",
+  "implicitDependencies": [
+    "dart-lib-a"
+  ],
+  "targets": {
+    "list": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-app-one",
+        "command": "ls web"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-app-one",
+        "command": "webdev serve"
+      }
+    }
+  }
+}

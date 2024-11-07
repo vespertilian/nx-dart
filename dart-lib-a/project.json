@@ -1,0 +1,15 @@
+{
+  "name": "dart-lib-a",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "dart-app-one",
+  "projectType": "library",
+  "targets": {
+    "list": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-lib-a",
+        "command": "ls web"
+      }
+    }
+  }
+}
