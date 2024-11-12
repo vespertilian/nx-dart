@@ -1,12 +1,11 @@
 import 'dart:html';
 import 'package:dart_lib_a/dart_lib_a.dart';
+import 'package:dart_lib_b/dart_lib_b.dart';
 
-HeadingElement H1(String itemText) => HeadingElement.h1()..text = itemText;
-LIElement LI(String value) => LIElement()..text = value;
-UListElement UL() => UListElement();
+
 
 void main() {
-  List<String> values = [Awesome().isAwesome];
+  List<String> values = [AwesomeLibA().isAwesome, AwesomeLibB().isAwesome];
   final output = querySelector('#output');
 
   output?.append(H1('Dart app running!'));

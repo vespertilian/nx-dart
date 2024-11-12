@@ -1,31 +1,31 @@
 {
-  "name": "dart-app-one",
+  "name": "dart-app-two",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "dart-app-one",
+  "sourceRoot": "dart-app-two",
   "projectType": "application",
   "implicitDependencies": [
     "dart-lib-a",
-    "dart-lib-b"
+    "dart-lib-c"
   ],
   "targets": {
     "serve": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "dart-app-one",
+        "cwd": "dart-app-two",
         "command": "webdev serve --auto=restart"
       }
     },
     "serve-release": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "dart-app-one",
+        "cwd": "dart-app-two",
         "command": "webdev serve web:8001 --release"
       }
     },
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "dart-app-one",
+        "cwd": "dart-app-two",
         "command": "webdev build"
       }
     }

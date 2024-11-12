@@ -1,13 +1,13 @@
 {
-  "name": "dart-lib-a",
+  "name": "dart-lib-b",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "dart-lib-a",
+  "sourceRoot": "dart-lib-b",
   "projectType": "library",
   "targets": {
     "list": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "dart-lib-a",
+        "cwd": "dart-lib-b",
         "command": "ls web"
       }
     }

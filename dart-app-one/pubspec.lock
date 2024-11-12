@@ -184,6 +184,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
+  dart_lib_b:
+    dependency: "direct main"
+    description:
+      path: "../dart-lib-b"
+      relative: true
+    source: path
+    version: "1.0.0"
   dart_style:
     dependency: transitive
     description:
