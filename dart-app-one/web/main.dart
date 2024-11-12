@@ -11,7 +11,7 @@ void main() {
 
   output?.append(H1('Dart app running!'));
 
-  UListElement uList = UL();
+  UListElement uList = UL()..dataset = {'test-id': 'list-of-libs'};
 
   for (final item in values) {
     uList.append(LI(item));

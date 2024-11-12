@@ -14,11 +14,11 @@
         "command": "webdev serve --auto=restart"
       }
     },
-    "build-release": {
+    "serve-release": {
       "executor": "nx:run-commands",
       "options": {
         "cwd": "dart-app-one",
-        "command": "webdev serve --release"
+        "command": "webdev serve web:8001 --release"
       }
     },
     "build": {
