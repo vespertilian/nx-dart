@@ -1,3 +1,4 @@
+@TestOn('browser')
 import 'package:dart_lib_a/dart_lib_a.dart';
 import 'package:test/test.dart';
 
@@ -10,7 +11,7 @@ void main() {
     });
 
     test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+      expect(awesome.isAwesome, 'Dart lib a!');
     });
   });
 }

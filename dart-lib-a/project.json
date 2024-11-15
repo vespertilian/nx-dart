@@ -8,7 +8,22 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "dart-lib-a",
-        "command": "ls web"
+        "command": "ls lib"
+      }
+    },
+    "dart-test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-lib-a",
+        "command": "dart test -p chrome"
+      },
+      "cache": true
+   },
+    "pub-get": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-lib-a",
+        "command": "dart pub get"
       }
     }
   }

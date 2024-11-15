@@ -12,7 +12,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "dart-app-one",
-        "command": "webdev serve --auto=restart"
+        "command": "dart pub global run webdev serve web:8002"
       }
     },
     "serve-release": {
@@ -22,12 +22,35 @@
         "command": "webdev serve web:8001 --release"
       }
     },
+    "pub-get": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-lib-a",
+        "command": "dart pub get"
+      }
+    },
+    "dart-test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dart-app-one",
+        "command": "dart test -p chrome"
+      },
+      "cache": true
+    },
     "build": {
       "executor": "nx:run-commands",
       "options": {
         "cwd": "dart-app-one",
         "command": "webdev build"
-      }
+      },
+      "cache": true,
+      "inputs": [
+        "production",
+        "^production"
+      ],
+      "outputs": [
+        "{workspaceRoot}/build"
+      ]
     }
   }
 }
